@@ -89,7 +89,7 @@ Partial Class Menu
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(385, 334)
+        ClientSize = New Size(385, 366)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(Button4)
