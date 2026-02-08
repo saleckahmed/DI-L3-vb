@@ -4,14 +4,15 @@
         pro = TextBox2.Text
         mult = TextBox1.Text
 
-        Dim lvi As New ListViewItem
         For i = 1 To pro
-            lvi.Text = i.ToString()
-            lvi.SubItems.Add(mult.ToString())
-            lvi.SubItems.Add((i * mult).ToString())
-
-        Next
-        ListView1.Items.Add(lvi)
+             Dim lvi As New ListViewItem
+        
+             lvi.Text = i.ToString()
+             lvi.SubItems.Add(mult.ToString())
+             lvi.SubItems.Add((i * mult).ToString())
+        
+             ListView1.Items.Add(lvi)
+         Next
 
     End Sub
 
