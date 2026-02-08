@@ -13,20 +13,22 @@
         Dim i, j, f, n As Integer
         n = TextBox1.Text
         For i = 0 To n
-            Dim lvi As New ListViewItem
-            f = 1
-            lvi.Text = i.ToString()
-            lvi.SubItems.Add((i * i).ToString())
-            lvi.SubItems.Add((i * i * i).ToString())
-            If i > 0 Then
+            If i Mod 2 = 0 Then
+                Dim lvi As New ListViewItem
+                lvi.Text = i.ToString
+                lvi.SubItems.Add((i * i).ToString)
+                lvi.SubItems.Add((i * i * i).ToString)
                 For j = 1 To i
                     f = f * j
                 Next
+                lvi.SubItems.Add(f.ToString)
+                ListView1.Items.Add(lvi)
+
             End If
 
-            lvi.SubItems.Add(f)
-            ListView1.Items.Add(lvi)
         Next
 
     End Sub
+
+
 End Class

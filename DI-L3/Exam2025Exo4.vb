@@ -17,14 +17,21 @@
             s = 1350
         End If
 
+
+
         If n >= 1 And n < 6 Then
             p = n * 50
             s = s + p
         ElseIf n >= 6 And n < 11 Then
-            p = n * 35
+            p = 50 * 5 + (n - 5) * 35
+            s = s + p
+        Else
+            p = 50 * 5 + 35 * 5
             s = s + p
         End If
 
         TextBox2.Text = s.ToString()
     End Sub
+
+
 End Class

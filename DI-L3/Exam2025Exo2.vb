@@ -14,6 +14,7 @@
         ElseIf n < 0 Then
             somN = somN + n
             cN = cN + 1
+
         Else
             TextBox2.Text = somP.ToString()
             TextBox3.Text = somN.ToString()
@@ -31,6 +32,11 @@
             End If
             TextBox6.Text = moyP.ToString()
             TextBox7.Text = moyN.ToString()
+
+
+            Button1.Enabled = False
         End If
     End Sub
+
+
 End Class

@@ -9,6 +9,8 @@
         TextBox2.ReadOnly = True
         TextBox3.ReadOnly = True
         TextBox4.ReadOnly = True
+        TextBox6.ReadOnly = True
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -20,7 +22,7 @@
             cE = cE + 1
         ElseIf n >= 12 And n < 18 Then
             cAdol = cAdol + 1
-        ElseIf n >= 18 Then
+        Else
             cAdul = cAdul + 1
         End If
     End Sub
@@ -28,8 +30,8 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         TextBox1.Text = cB
         TextBox2.Text = cE
-        TextBox3.Text = cAdul
-        TextBox4.Text = cAdol
+        TextBox3.Text = cAdol
+        TextBox4.Text = cAdul
         If cB > cE And cB > cAdul And cB > cAdol Then
             TextBox6.Text = "Bebe"
         ElseIf cE > cB And cE > cAdul And cE > cAdol Then
